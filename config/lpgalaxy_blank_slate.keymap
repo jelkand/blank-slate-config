@@ -21,16 +21,7 @@
 #define BT(n) BT_SEL n
 
 / {
-
-    macros {
-      ZMK_MACRO(thumbs_up,
-		wait-ms = <1>;
-		tap-ms = <5>;
-                bindings = <&kp PLUS &kp COLON &kp PLUS &kp N1 &kp COLON &kp RET>;
-		)
-    };
-    
-    tap_dances {
+     tap_dances {
     	shifty: shift_caps_word {
 		compatible = "zmk,behavior-tap-dance";
 		label = "TD_SHIFTY";
